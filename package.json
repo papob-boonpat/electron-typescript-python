@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "start": "yarn build && electron .",
-    "build-osx": "electron-packager .  --out ./dist --platform darwin --overwrite --ignore='python|app/src'"
+    "build-osx": "electron-packager .  --out ./dist --platform darwin --overwrite --ignore='backend/src|app/src'"
   },
   "dependencies": {
     "axios": "^0.24.0",
