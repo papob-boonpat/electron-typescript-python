@@ -9,7 +9,7 @@ const createWindow = () => {
       preload: __dirname + "/preload.js",
     },
   });
-  mainWindow.loadFile("./index.html");
+  mainWindow.loadFile(__dirname + "/../index.html");
   mainWindow.on("ready-to-show", () => mainWindow?.show());
 
   mainWindow.on("closed", () => {
